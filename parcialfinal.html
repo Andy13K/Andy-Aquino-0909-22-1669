@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CALCULA TU SALARIO</title>
+	<script src="jsparcialfinal.js"></script>
+</head>
+<body>
+<div class="formulariosueldo">
+<h1>DISTRIBUIDORA HERNANDEZ</h1> <!-- Encabezado-->
+<h2>CALCULA TU SALARIO</h2>
+	<form id="sueldomes" method="post">
+		<div class="calcular">
+		<label for="trabajador">INGRESA TU NOMBRE:</label><br>
+		<input id="trabajador" type="text" name="nombre"> <!-- Encabezado-->
+		</div>
+		<div class="calcular">
+		<label for="">SELECIONA TU CARGO:</label><br>  <!-- Selecionar cargo y horas extras-->
+		<input id="supervisor" type="radio" name="puesto" value="4250">
+		<label for="supervisor">SUPERVISOR</label><br>
+		<input id="secretaria" type="radio" name="puesto" value="3500">
+		<label for="secretaria">SECRETARIA</label><br>
+		<input id="digitador" type="radio" name="puesto" value="3500">
+		<label for="digitador">DIGITADOR</label><br>
+		<input id="mensajero" type="radio" name="puesto" value="3000">
+		<label for="mensajero">MENSAJERO</label><br>  <!-- Selecionar cargo y horas extras-->
+		</div>
+
+		<div class="calcular">
+		<label for="horasextras">INGRESA TUS HORAS EXTRAS:</label>
+		<input id="horasextras" type="number" name="hextras"> <!--horas extras-->
+		</div>
+
+		<input id="CALCULAR" type="button" value="CALCULAR SUELDO" onclick="alert()"> <!-- Boton para Calcular Salario-->
+	</div>
+</body>
+</html>
